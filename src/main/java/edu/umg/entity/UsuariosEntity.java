@@ -1,9 +1,21 @@
 package edu.umg.entity;
 
+import jakarta.persistence.Basic;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
 import java.util.Objects;
 
+@Entity
+@Table(name = "usuarios", schema = "public", catalog = "postgres")
 public class UsuariosEntity {
+
+    @Basic
+    @Column(name = "users")
     private String users;
+    @Basic
+    @Column(name = "password")
     private String password;
 
     public String getUsers() {

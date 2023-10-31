@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 public class EstudiantesEntity {
+
     private int idEstudiante;
     private String nombre;
     private String apellido;

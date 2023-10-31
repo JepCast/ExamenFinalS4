@@ -17,11 +17,5 @@
         <property name="email">
             <column name="email" sql-type="varchar(100)" length="100"/>
         </property>
-        <set name="inscripcionesByIdEstudiante" inverse="true">
-            <key>
-                <column name="id_estudiante" not-null="true"/>
-            </key>
-            <one-to-many not-found="ignore" class="edu.umg.entity.InscripcionesEntity"/>
-        </set>
     </class>
 </hibernate-mapping>

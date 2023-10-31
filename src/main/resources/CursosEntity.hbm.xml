@@ -21,4 +21,15 @@
             <one-to-many not-found="ignore" class="edu.umg.entity.InscripcionesEntity"/>
         </set>
     </class>
+    <class name="edu.umg.entity.CursosEntity" table="cursos" schema="public" catalog="DBInscipcion">
+        <id name="idCurso">
+            <column name="id_curso" sql-type="integer"/>
+        </id>
+        <property name="nombreCurso">
+            <column name="nombre_curso" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="profesor">
+            <column name="profesor" sql-type="varchar(50)" length="50"/>
+        </property>
+    </class>
 </hibernate-mapping>
